@@ -1,8 +1,10 @@
-import re
-answer = input("What is SQL?")
-ans1 = "Structured Query Language"
-pattern = re.compile(f"(?i){ans1}")
-if pattern.fullmatch(answer):
-    print("The answer is correct.")
-else:
-    print("The answer is incorrect.")
+import random
+
+def check_the_guessed_num(number):
+    if random.randint(2,3) == number:
+        print(f"Congratuations! You have guessed the correct number {number}.")     
+    else:
+        print(f"Bummer! You made an incorrect guess.")     
+
+
+check_the_guessed_num(2)
