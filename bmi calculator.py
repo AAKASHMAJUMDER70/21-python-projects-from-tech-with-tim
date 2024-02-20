@@ -14,6 +14,5 @@ def bmi_calculator(methods,weight,height):
 
 
 
-if __name__=='__main__':
-    print(bmi_calculator('metric',75,1.7))    
+print(bmi_calculator('metric',75,1.7))    
         
