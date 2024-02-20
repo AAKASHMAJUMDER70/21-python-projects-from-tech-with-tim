@@ -220,4 +220,4 @@ else:
     
 perc = (score/20)*100 
 print("You have successfully completed the quiz.")
-print(f"Your score of the quiz is {score} and {perc}%")
+print(f"Your score of the quiz is {score} and {perc}")

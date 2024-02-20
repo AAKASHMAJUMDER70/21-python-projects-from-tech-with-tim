@@ -1,10 +1,18 @@
-import random
-
-def check_the_guessed_num(number):
-    if random.randint(2,3) == number:
-        print(f"Congratuations! You have guessed the correct number {number}.")     
-    else:
-        print(f"Bummer! You made an incorrect guess.")     
-
-
-check_the_guessed_num(2)
+def check_winner(user_chooses=input().lower(),computer_chooses=input().lower()):
+    if user_chooses==computer_chooses:
+        print("It is a tie")
+    elif user_chooses=="rock":
+        if computer_chooses=="scissor":
+            print("Human Wins")
+        elif computer_chooses=="paper":
+            print("computer wins")
+    elif user_chooses=="paper":
+        if computer_chooses=="scissor":
+            print("computer Wins")
+        elif computer_chooses=="rock":
+            print("human wins")
+    elif user_chooses=="scissor":
+        if computer_chooses=="rock":
+            print("computer Wins")
+        elif computer_chooses=="paper":
+            print("human wins")
