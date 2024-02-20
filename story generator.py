@@ -19,12 +19,19 @@ def generate_lists(words,num_of_lists_to_be_generated,min_words,max_words):
     return lists 
         
         
-
+'''#1st way
 lists = generate_lists(words1,num_of_lists_to_be_generated1,min_words1,max_words1)
 story = ""
 for i in lists:
     j = random.randrange(0,len(i))
     story = story + " " + i[j]
+print(story)'''
+
+#2nd way
+lists = generate_lists(words1,num_of_lists_to_be_generated1,min_words1,max_words1)
+story = ""
+for i in lists:
+    story = story + " " + random.choice(i)
 print(story)
         
         
